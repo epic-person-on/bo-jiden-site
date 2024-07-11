@@ -3,15 +3,16 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 const products = [
-  { url: 'https://example.com', name: 'Bo Jiden Mask', image: '' },
-  { url: 'https://example.com', name: 'Bo Jiden Wig', image: '' },
-  { url: 'https://example.com', name: 'Invincible Man Light sword', image: '' },
+  { url: 'https://example.com', name: 'Bo Jiden Mask', image: 'mask.jpg' },
+  { url: 'https://example.com', name: 'Bo Jiden Wig', image: 'wig.jpg' },
+  { url: 'https://example.com', name: 'Invincible Man Light sword', image: 'sword.jpg' },
   // Add more products as needed
 ];
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
         <meta charSet="utf-8" />
         <title>Bo Jiden</title>
       </Head>
@@ -22,7 +23,7 @@ export default function Home() {
         <div className={styles.grid}>
           {products.map(product => (
             <Link key={product.url} href={product.url}>
-              <a className={styles.card} target="_blank">
+              <a className={styles.card}>
                 <img src={product.image} alt={product.name} height="200px" />
                 <h3>{product.name}</h3>
               </a>
@@ -32,4 +33,4 @@ export default function Home() {
       </main>
     </div>
   );
-  }
+}
