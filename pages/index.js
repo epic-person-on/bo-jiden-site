@@ -1,23 +1,35 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from 'next/head';
+import Link from 'next/link';
+import styles from '../styles/Home.module.css';
+
+const products = [
+  { url: 'https://example.com', name: 'Bo Jiden Mask', image: '' },
+  { url: 'https://example.com', name: 'Bo Jiden Wig', image: '' },
+  { url: 'https://example.com', name: 'Invincible Man Light sword, image: '' },
+  // Add more products as needed
+];
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+    <div className={styles.container}>
+        <meta charSet="utf-8" />
+        <title>Bo Jiden</title>
       </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+      <header className={styles.titleBar}>
+        <h1>Bo Jiden Masks</h1>
+      </header>
+      <main className={styles.main}>
+        <div className={styles.grid}>
+          {products.map(product => (
+            <Link key={product.url} href={product.url}>
+              <a className={styles.card} target="_blank">
+                <img src={product.image} alt={product.name} height="200px" />
+                <h3>{product.name}</h3>
+              </a>
+            </Link>
+          ))}
+        </div>
       </main>
-
-      <Footer />
     </div>
-  )
-}
+  );
+  }
