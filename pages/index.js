@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 const products = [
   { url: 'https://example.com', name: 'Bo Jiden Mask', image: '' },
   { url: 'https://example.com', name: 'Bo Jiden Wig', image: '' },
-  { url: 'https://example.com', name: 'Invincible Man Light sword, image: '' },
+  { url: 'https://example.com', name: 'Invincible Man Light sword', image: '' },
   // Add more products as needed
 ];
 
