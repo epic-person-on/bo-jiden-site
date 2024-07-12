@@ -3,9 +3,9 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 const products = [
-  { url: 'https://creations.mtdv.me/Bojidenmask', name: 'Bo Jiden Mask', image: 'https://m.media-amazon.com/images/I/51wi7VqKroL._AC_SX679_.jpg' },
-  { url: 'https://creations.mtdv.me/Bojidenmask', name: 'Bo Jiden Wig', image: 'https://i.etsystatic.com/18173219/r/il/1865a2/5388230307/il_570xN.5388230307_7pgg.jpg' },
-  { url: 'https://creations.mtdv.me/Bojidenmask', name: 'Invincible Man Light sword', image: '' },
+  { url: 'https://creations.mtdv.me/BOJIDEN', name: 'Bo Jiden Mask', image: 'https://m.media-amazon.com/images/I/51wi7VqKroL._AC_SX679_.jpg' },
+  { url: 'https://creations.mtdv.me/BOJIDEN', name: 'Bo Jiden Wig', image: 'https://i.etsystatic.com/18173219/r/il/1865a2/5388230307/il_570xN.5388230307_7pgg.jpg' },
+  { url: 'https://creations.mtdv.me/BOJIDEN', name: 'Invincible Man Light sword', image: 'https://m.media-amazon.com/images/I/51Kq9U2xu-L._AC_UF894,1000_QL80_FMwebp_.jpg' },
   // Add more products as needed
 ];
 
