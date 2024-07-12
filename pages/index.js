@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
+        <link rel='icon' href="https://img.icons8.com/color/96/joe-biden.png" />
         <meta charSet="utf-8" />
         <title>Bo Jiden</title>
       </Head>
